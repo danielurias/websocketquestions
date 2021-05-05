@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="app">
+                <div id="h1">
+                    <h1>Football Player Quiz</h1>
+                </div>
+                <h3>Score</h3>
+                <div id="players">
+                    <div id="player1">
+                        <h3>Player 1</h3>
+                        <span>{{ score1 }}</span>
+                    </div>
+                    <div id="player2">
+                        <h3>Player 2</h3>
+                        <span id="span">{{ score2 }}</span>
+                    </div>
+                </div>
+                <div id="state">
+                You are player {{ myPlayer }}
+                </div>
+                <div id="newq">
+                    <p>{{ playerDesc }}</p>
+                </div>
+                <div v-if="state=='asking'">
+                <div id="question">
+                    What team does this football player play for?:<br><input type="text" v-model="question">
+                    <button id="send" v-on:click="newQuestion">Send</button>
+                </div>
+                <hr>
+                </div>
+                <ol>
+                <li id="question-receive" v-for="question in questionsReceived">
+                    <h2>Question</h2>
+                    What team does this football player play for?<br>
+                    <strong id="quest">{{ question }}</strong>
+                </li>
+                </ol>
+                <div v-if="state=='answering'">
+                <div id="answer">
+                    Enter Answer Here:<br><input type="text" v-model="answer">
+                    <button id="send" v-on:click="newAnswer">Answer</button>
+                </div>
+                <hr>
+                </div>
+                <ol>
+                <li id="answer-receive" v-for="answer in answerReceived">
+                    <p id="res">Response</p><br>
+                    <strong id="quest">{{ answer }}</strong>
+                    <button @click="correctAnswer">Correct</button>
+                    <button @click="wrongAnswer">Wrong</button>
+                </li>
+                </ol>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+
+
+
+

@@ -1,0 +1,151 @@
+* {
+    font-family: Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #212121;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 700px 1fr;
+}
+
+#app {
+    grid-column-start: 2;
+}
+
+h1 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#player1 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    padding-left: 30px;
+}
+
+#player1 h3 {
+    padding-bottom: 5px;
+}
+
+#player1 span {
+    font-size: 30px;
+}
+
+
+#player2 {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+    padding-right: 30px;
+}
+
+#player2 h3 {
+    padding-bottom: 5px;
+}
+
+#player2 span {
+    font-size: 30px;
+}
+
+#question {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h2 {
+    padding-bottom: 10px;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#quest {
+    color:mediumspringgreen;
+}
+
+#answer {
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+}
+
+#send {
+    margin-top: 20px;
+}
+
+#question-receive {
+    margin-top: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+#answer-receive {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 220px;
+    margin-left: 220px;
+    background-color: black;
+    color: white;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#players {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-bottom: 30px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#newq {
+    background-color: black;
+    text-align: center;
+    color: greenyellow;
+    font-size: 24px;
+    padding: 20px 20px;
+    margin-left: 100px;
+    margin-right: 100px
+}
+
+hr {
+    border: 2px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+#res {
+    padding-bottom: 0px;
+}
+
+#state {
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    padding: 20px 20px;
+    margin-left: 100px;
+    margin-right: 100px
+}
